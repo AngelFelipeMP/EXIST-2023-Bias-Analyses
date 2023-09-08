@@ -1,0 +1,37 @@
+TODO
+
+- Check the datasets [X]
+- task 2 & 3 well see the who dataset [X]
+- improve pred task 2 and 3 - task 1 NO == 1 [X]
+   - remove these sample to no confuse tge LLM during fine-tune
+- Normalize output layers task 2 input/output [X]
+- add NO to the output save file [X]
+- range of the metric (documentation) [X]
+- clean the all training scripts [X]
+- preper script to run in 2 gpugit [X]
+- get valeus for training MAX_LEN, BATCH_SIZE [X]
+- check infoXLM [X]
+      - I may download
+      - zip
+      - send to remove_non_sexist
+      - unzip
+- write the test script [X]
+  - take into account NO == 1 task1 for the other tasks
+  - join NO value the final predictions [X]
+ - fix small problems regards to [????]
+       - save mode in dict
+       - load model and predict using two gpus
+
+- Check how to submit the runs
+- Script to create hard-labels 
+- Script to create Emsemble (simple average)
+      - reseive soft-labels 
+      - retrive soft-labels
+
+
+
+
+Giulia
+script
+- agregate predictions - diferente LLM
+- aproximate preds to possible values
