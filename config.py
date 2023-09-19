@@ -1,14 +1,14 @@
 import os
 #Hiper-parameters
-EPOCHS = 10 #10
-MAX_LEN = 100 # 100 
+EPOCHS = 1 #10
+MAX_LEN = 24 # 100 
 DROPOUT = 0.3
 LR = 3e-5 #5e-6, 1e-5, 3e-5, 5e-5
-BATCH_SIZE = 20 #24
-TRANSFORMERS = ['bert-base-multilingual-uncased','xlm-roberta-base']
-# TRANSFORMERS = ['bert-base-multilingual-uncased','xlm-roberta-base','infoxlm-base']
+BATCH_SIZE = 4 #24 #20
+TRANSFORMERS = ['bert-base-multilingual-uncased']
+# TRANSFORMERS = ['bert-base-multilingual-uncased','xlm-roberta-base']
 
-N_ROWS=None #16
+N_ROWS=16 #None
 SEED = 17
 CODE_PATH = os.getcwd()
 REPO_PATH = '/'.join(CODE_PATH.split('/')[0:-1])
@@ -37,12 +37,3 @@ DEVICE = 'max' # None 'max' 'cpu' 'cuda:0' 'cuda:1'
 TRAIN_WORKERS = 10
 VAL_WORKERS = 10
 LOGS_PATH = REPO_PATH + '/' + 'logs'
-
-
-
-# DATASET_COLUMNS = [DATASET_INDEX, *DATASET_TEXT] + LABELS
-# DATASET_CLASSES = {
-#     DATASET_COLUMNS[2]:{'NO': 0, 'YES':1}, 
-#     DATASET_COLUMNS[3]:{'NO':-1,'DIRECT':0,'REPORTED':1, 'JUDGEMENTAL':2},
-#     DATASET_COLUMNS[4]:{'NO':-1,'IDEOLOGICAL-INEQUALITY':0,'STEREOTYPING-DOMINANCE':1, 'OBJECTIFICATION':2, 'SEXUAL-VIOLENCE':3, 'MISOGYNY-NON-SEXUAL- VIOLENCE':4}
-#                 }
